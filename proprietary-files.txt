@@ -1233,3 +1233,5 @@ odm/firmware/2_tick_P_RTP.bin:vendor/etc/vibrator/effect_2.bin
 odm/firmware/3_thud_P_RTP.bin:vendor/etc/vibrator/effect_3.bin
 odm/firmware/4_pop_P_RTP.bin:vendor/etc/vibrator/effect_4.bin
 odm/firmware/5_heavyClick_P_RTP.bin:vendor/etc/vibrator/effect_5.bin
+
+system_ext/framework/camerax-vendor-extensions.jar

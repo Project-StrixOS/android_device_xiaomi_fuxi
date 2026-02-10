@@ -15,10 +15,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/audio/mixer_paths_kalama_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama/mixer_paths_kalama_mtp.xml \
     $(LOCAL_PATH)/config/audio/resourcemanager_kalama_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama/resourcemanager_kalama_mtp.xml
 
-# eUICC
-PRODUCT_PACKAGES += \
-    XiaomiEuicc
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/permissions/privapp-permissions-euiccgoogle.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-euiccgoogle.xml \
     frameworks/native/data/etc/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.xml
@@ -37,8 +33,22 @@ PRODUCT_PACKAGES += \
 # PowerShare
 $(call soong_config_set,lineage_powershare,powershare_path,/sys/class/qcom-battery/reverse_chg_mode)
 PRODUCT_PACKAGES += \
-    vendor.lineage.powershare-service.default
+    vendor.strix.powershare-service.default
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+
+
+$(call inherit-product-if-exists, vendor/bcr/bcr.mk)
+
+$(call inherit-product-if-exists, vendor/google/gms/config.mk)
+
+$(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
+
+$(call inherit-product-if-exists, vendor/custom/config.mk)
+
+# Camera
+$(call inherit-product-if-exists, vendor/xiaomi/camera/miuicamera.mk)
+
+$(call inherit-product-if-exists, packages/apps/Halo/config.mk)
