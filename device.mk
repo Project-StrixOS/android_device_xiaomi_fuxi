@@ -46,6 +46,8 @@ $(call inherit-product-if-exists, vendor/google/gms/config.mk)
 
 $(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
 
+$(call inherit-product-if-exists, vendor/pixel/gms/products/gms.mk)
+
 $(call inherit-product-if-exists, vendor/custom/config.mk)
 
 # Camera
