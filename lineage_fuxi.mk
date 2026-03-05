@@ -17,7 +17,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 PRODUCT_DEVICE := fuxi
 PRODUCT_NAME := fuxi
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := fuxi
+PRODUCT_MODEL := 2211133C
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
