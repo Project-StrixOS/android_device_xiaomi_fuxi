@@ -26,6 +26,7 @@ PRODUCT_COPY_FILES += \
 # Overlay
 PRODUCT_PACKAGES += \
     EuiccResFuxi \
+    NfcOverlayFuxi \
     FrameworkResOverlayFuxi \
     SystemUIOverlayFuxi \
     SettingsOverlayFuxi
@@ -44,11 +45,10 @@ $(call inherit-product-if-exists, vendor/bcr/bcr.mk)
 
 $(call inherit-product-if-exists, vendor/google/gms/config.mk)
 $(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
-$(call inherit-product-if-exists, vendor/pixel/gms/products/gms.mk)
 
 $(call inherit-product-if-exists, vendor/custom/config.mk)
 
 # Camera
-$(call inherit-product-if-exists, device/xiaomi/camera/miuicamera.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/camera/miuicamera.mk)
 
 $(call inherit-product-if-exists, packages/apps/Halo/config.mk)
