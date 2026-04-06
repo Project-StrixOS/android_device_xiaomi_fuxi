@@ -20,5 +20,7 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := 2211133C
 PRODUCT_MANUFACTURER := Xiaomi
 
-# PRODUCT_BUILD_PROP_OVERRIDES += \
-#     TARGET_PRODUCT=fuxi
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    DeviceProduct=fuxi \
+    DeviceName=fuxi \
+    SystemName=fuxi
