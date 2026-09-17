@@ -50,6 +50,6 @@ $(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
 $(call inherit-product-if-exists, vendor/custom/config.mk)
 
 # Camera
-$(call inherit-product-if-exists, vendor/xiaomi/camera/miuicamera.mk)
+$(call inherit-product-if-exists, device/xiaomi/fuxi-miuicamera/device.mk)
 
 $(call inherit-product-if-exists, packages/apps/Halo/config.mk)
