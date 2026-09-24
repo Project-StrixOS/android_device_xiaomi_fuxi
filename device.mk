@@ -26,7 +26,6 @@ PRODUCT_COPY_FILES += \
 
 # Overlay
 PRODUCT_PACKAGES += \
-    EuiccResFuxi \
     NfcOverlayFuxi \
     FrameworkResOverlayFuxi \
     SystemUIOverlayFuxi \
@@ -43,8 +42,4 @@ PRODUCT_SOONG_NAMESPACES += \
 
 
 $(call inherit-product-if-exists, vendor/bcr/bcr.mk)
-
-$(call inherit-product-if-exists, vendor/google/gms/config.mk)
-$(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
-
-$(call inherit-product-if-exists, vendor/custom/config.mk)
+$(call inherit-product-if-exists, vendor/strix/config.mk)
